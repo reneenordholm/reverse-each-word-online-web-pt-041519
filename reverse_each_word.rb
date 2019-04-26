@@ -8,8 +8,12 @@ require 'pry'
 
 def reverse_each_word(sentence1)
   new_sentence = sentence1.split(/ /)
+      binding.pry
     new_sentence.each do |word|
+      binding.pry
      word.reverse
+      binding.pry
       return new_sentence.join(" ")
+      binding.pry
   end
 end
