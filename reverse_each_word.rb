@@ -20,7 +20,6 @@ def reverse_each_word(sentence1)
   new_sentence = [] #creating new array for updated sentence
     convert_to_string.map do |word| #going through each word in the string
      new_sentence << word.reverse #reverse each word in the string, add to new array#  end
-      puts new_sentence.join(" ") #convert updated sentence to string
  end 
 end
 
