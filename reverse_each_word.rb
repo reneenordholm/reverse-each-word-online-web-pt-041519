@@ -17,9 +17,10 @@ require 'pry'
 
 def reverse_each_word(sentence1)
   convert_to_string = sentence1.split(/ /) #converted array to string w/words separated
-    convert_to_string.map do |word| #going through each word in the string
-     word.reverse #reverse each word in the string, add to new array#  end
- end 
- return convert_to_string.join(" ")
+  new_sentence = [] #creating new array for updated sentence
+    convert_to_string.each do |word| #going through each word in the string
+     new_sentence << word.reverse #reverse each word in the string, add to new array
+  end
+   new_sentence.join(" ") #convert updated sentence to string
 end
 
