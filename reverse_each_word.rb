@@ -8,12 +8,9 @@ require 'pry'
 
 def reverse_each_word(sentence1) #sentence1 is an array
   convert_to_string = sentence1.split(/ /) #converted array to string w/words separated
-  new_sentence = []
+  new_sentence = [] #creating new array for updated sentence
     convert_to_string.each do |word| #going through each word in the string
-      binding.pry
-     new_sentence << word.reverse #reverse each word in the string
-      binding.pry
-    return new_sentence.join(" ")
-      binding.pry
+     new_sentence << word.reverse #reverse each word in the string, add to new array
+    return new_sentence.join(" ") #convert updated sentence to string
   end
 end
