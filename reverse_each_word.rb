@@ -7,11 +7,11 @@ require 'pry'
 # 3. Return array as string w/words reversed
 
 def reverse_each_word(sentence1) #sentence1 is an array
-  new_sentence = sentence1.split(/ /) #converted array to string w/words separated
-  
-    new_sentence.each do |word| #going through each word in the string
+  convert_to_string = sentence1.split(/ /) #converted array to string w/words separated
+  new_sentence = []
+    convert_to_string.each do |word| #going through each word in the string
       binding.pry
-     word.reverse #reverse each word in the string
+     new_sentence << word.reverse #reverse each word in the string
       binding.pry
     return new_sentence.join(" ")
       binding.pry
