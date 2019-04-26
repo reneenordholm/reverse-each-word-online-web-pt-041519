@@ -14,3 +14,4 @@ def reverse_each_word(sentence1) #sentence1 is an array
   end
   return new_sentence.join(" ") #convert updated sentence to string
 end
+
