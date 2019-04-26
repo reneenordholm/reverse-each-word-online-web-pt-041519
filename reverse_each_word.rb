@@ -13,7 +13,7 @@ def reverse_each_word(sentence1) #sentence1 is an array
       binding.pry
      word.reverse #reverse each word in the string
       binding.pry
-      return new_sentence.join(" ")
+    return new_sentence.join(" ")
       binding.pry
   end
 end
