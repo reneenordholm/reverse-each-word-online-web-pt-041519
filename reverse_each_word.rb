@@ -11,4 +11,5 @@ def reverse_each_word(sentence1)
     new_sentence.each do |word|
      word.reverse
   end
+    return new_sentence
 end
